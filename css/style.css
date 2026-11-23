@@ -1,0 +1,366 @@
+/* ===== GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #1f3a5f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff9f43;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 30px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;     /* ছবি চেপে না গিয়ে সুন্দরভাবে বসবে */
+    border-radius: 50%;
+    border: 5px solid #1f3a5f;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #1f3a5f;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9f43;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e08a30;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ff9f43;
+    color: #ff9f43;
+}
+
+.btn-outline:hover {
+    background-color: #ff9f43;
+    color: white;
+}
+
+/* ===== HIGHLIGHTS ===== */
+.highlights {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 30px;
+    color: #1f3a5f;
+    margin-bottom: 30px;
+}
+
+.highlight-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 280px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h3 {
+    color: #ff9f43;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff9f43;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* ===== PAGE SECTION (About, Projects, Achievements, Contact) ===== */
+.page-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.page-section h1 {
+    color: #1f3a5f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff9f43;
+    padding-bottom: 10px;
+}
+
+.page-section h2 {
+    color: #1f3a5f;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.page-section p {
+    margin-bottom: 15px;
+}
+
+.page-section ol,
+.page-section ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.page-section ol li,
+.page-section ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1f3a5f;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f6f9;
+}
+
+table tr:hover {
+    background-color: #ffe8cc;
+}
+/* ===== PROJECT CARD ===== */
+.project-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff9f43;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-card h2 {
+    color: #1f3a5f;
+    font-size: 22px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.project-card p {
+    margin-bottom: 8px;
+}
+
+/* External links */
+.page-section a {
+    color: #ff9f43;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-section a:hover {
+    text-decoration: underline;
+}
+/* ===== ACHIEVEMENT CARD ===== */
+.achievement-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #1f3a5f;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.achievement-card h2 {
+    color: #1f3a5f;
+    font-size: 22px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+/* ===== CONTACT INFO ===== */
+.contact-info {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff9f43;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* ===== FORM ===== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1f3a5f;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff9f43;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin: 0;
+    font-weight: normal;
+}
+
+form button {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
